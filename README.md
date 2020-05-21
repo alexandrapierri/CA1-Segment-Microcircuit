@@ -10,4 +10,4 @@ Anyone who wishes to reproduce our findings should first study and familiarize t
 This script reprodces the heatmpas of Figure 9B.
 
 2. corrcoef_currents.m:
-This script reproduces one of our main findings in the paper, the correlation between net input current and network frequency, namely Figure 10C. 
+This script reproduces one of our main findings in the paper, of Figure 10C. 

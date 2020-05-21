@@ -13,15 +13,9 @@ hold off;
 
 
 figure(1);clf;
- 
-%% In the following line I made replaced "max_freq" with "av" for average peak value April 22 2016
-%%surf(gsb,gbs,max_freq);view(0,90);shading interp;
 
-%scatter(x,y,sz,c,'filled');
 surf(x_gpyrpyr,y_gecca3pyr,z_normtheta_April62020);view(0,90);shading interp;
 
-%dim = [.58 .7 .2 .3];
-%annotation('ellipse',dim)
 
 xlabel('gpyr-pyr (nS)','fontsize',16);
 ylabel('gec/ca3-pyr (nS)','fontsize',16);
@@ -57,10 +51,7 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure(2);clf;
 
-%% In the following line I made replaced "max_freq" with "av" for average peak value April 22 2016
-%%surf(gsb,gbs,max_freq);view(0,90);shading interp;
 
-%scatter(x,y,sz,g,'filled');
 surf(x_gpyrpyr,y_gecca3pyr,z_thetafreq_April62020);view(0,90);shading interp;
 
 
@@ -101,10 +92,6 @@ end
 
 figure(3);clf;
 
-%% In the following line I made replaced "max_freq" with "av" for average peak value April 22 2016
-%%surf(gsb,gbs,max_freq);view(0,90);shading interp;
-
-%scatter(x,y,sz,h,'filled');
 surf(x_gpyrpyr,y_gecca3pyr,z_stimulation_April62020);view(0,90);shading interp;
 xlabel('gpyr-pyr (nS)','fontsize',16);
 ylabel('gec/ca3-pyr (nS)','fontsize',16);
@@ -143,11 +130,8 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure(4);clf;
 
-%% In the following line I made replaced "max_freq" with "av" for average peak value April 22 2016
-%%surf(gsb,gbs,max_freq);view(0,90);shading interp;
 
-scatter(x,y,sz,j,'filled');
-%surf(x_gpyrpyr,y_gecca3pyr,z_stimulation_April62020);view(0,90);shading interp;
+surf(x_gpyrpyr,y_gecca3pyr,z_stimulation_April62020);view(0,90);shading interp;
 xlabel('gpyr-pyr (nS)','fontsize',16);
 ylabel('gec/ca3-pyr (nS)','fontsize',16);
 zlabel('Stimulation','fontsize',16);
@@ -185,10 +169,7 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure(5);clf;
 
-%% In the following line I made replaced "max_freq" with "av" for average peak value April 22 2016
-%%surf(gsb,gbs,max_freq);view(0,90);shading interp;
 
-% scatter(x,y,sz,i,'filled');
 surf(x_gpyrpyr,y_gecca3pyr,z_nettheta_April272020);view(0,90);shading interp;
 xlabel('gpyr-pyr (nS)','fontsize',16);
 ylabel('gec/ca3-pyr (nS)','fontsize',16);

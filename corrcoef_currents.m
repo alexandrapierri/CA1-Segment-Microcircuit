@@ -1,26 +1,13 @@
-[R_n,P_n] = corrcoef(norm_theta_3_12Hz_range(:,3),norm_theta_3_12Hz_range(:,11));
-% [rho,pval] = corr(currents_3_12Hz_range(:,2),currents_3_12Hz_range(:,9));
+%[R_n,P_n] = corrcoef(norm_theta_3_12Hz_range(:,3),norm_theta_3_12Hz_range(:,11));
 
-% [rho,pval] = corr(norm_theta_3_12Hz_range(:,2),norm_theta_3_12Hz_range(:,9));
-%corrplot(R);
 
-% plot(corr(currents_3_12Hz_range(:,2),currents_3_12Hz_range(:,9)));
-% plot(corrcoef(currents_3_12Hz_range(:,2),currents_3_12Hz_range(:,9)))
-
-% ORIGINAL CURRENT VALUES
-
-% scatter(currents_3_12Hz_range(:,9),currents_3_12Hz_range(:,2));
-
-% xm = currents_3_12Hz_range(:,9);
-% fm = currents_3_12Hz_range(:,2);
+[rho,pval] = corr(norm_theta_3_12Hz_range(:,2),norm_theta_3_12Hz_range(:,9));
 
 % LINEAR REGRESSION, CODE BY ALEXANDRA CHATZIKALYMNIOU APRIL 2020.
 
 xm_n = norm_theta_3_12Hz_range(:,11);
 fm_n = norm_theta_3_12Hz_range(:,3);
 km_n = norm_theta_3_12Hz_range(:,12);
-
-%scatter(norm_theta_3_12Hz_range(:,11), norm_theta_3_12Hz_range(:,3))
 
 
 N_n = max(size(xm_n));
@@ -42,8 +29,6 @@ q_n = b_n + m_n*x_n;
 
 figure(1);clf;
 
-%% April 6 2020
-
 % err = km; %0.3*ones(size(km));
 % errorbar(xm,fm,km,'.b','horizontal','MarkerSize',20);
 
@@ -57,10 +42,6 @@ ylabel('Theta Frequency (Hz)','fontsize',16);
 
 xlim([-12,-2]);
 ylim([2,9]);
-
-% set(gca,'CLim',[0,0.0000000000000000000000000000000000000000005]);
-% t = colorbar;
-% set(get(t,'ylabel'),'String', 'Normalized Theta Power','fontsize',16);
 
 title_string = sprintf('Theta Frequency vs Net Current');
 title(title_string,'fontsize',16);

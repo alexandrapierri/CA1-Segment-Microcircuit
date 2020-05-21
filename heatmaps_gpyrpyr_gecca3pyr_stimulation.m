@@ -4,7 +4,7 @@ sz = 100;
 c = norm_theta_3_12Hz_range(:,1); %norm theta
 g = norm_theta_3_12Hz_range(:,3); %theta freq
 h = norm_theta_3_12Hz_range(:,6); %stimulation
-j = norm_theta_3_12Hz_range(:,10); %3vs4
+j = norm_theta_3_12Hz_range(:,10); %3vs4, not needed, for tracking purposes
 i = norm_theta_3_12Hz_range(:,2); %Net Theta Power
 
 figure
